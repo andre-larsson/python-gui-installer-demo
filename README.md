@@ -1,14 +1,29 @@
 # Simple GUI Installer Demo
 
-This is a small Python desktop app that demonstrates the basic shape of a distributable Windows GUI application:
+This repository is an educational demo, not a production application. It shows the basic shape of a distributable Python desktop app with a Windows installer.
+
+The app demonstrates:
 
 - `tkinter` / `ttk` GUI
 - a background worker thread that does not block the UI
 - local JSON settings storage
 - PyInstaller build script
 - Inno Setup installer script
+- GitHub Actions workflow for building the installer on Windows
 
 The app itself only uses the Python standard library. PyInstaller and Inno Setup are only needed when building the Windows executable and installer.
+
+## Demo Scope
+
+This project is intentionally small so the packaging flow is easy to inspect:
+
+- it is meant for learning Python desktop packaging
+- it is not code signed
+- it does not include auto-updates
+- it does not include crash reporting or telemetry
+- it does not try to be a complete application template
+
+Use it as a starting point for understanding the moving parts, then adapt the structure for a real app.
 
 ## Project Layout
 

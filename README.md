@@ -93,3 +93,14 @@ Push the project to GitHub, then run **Actions > Build Windows Installer > Run w
 - `SimpleGuiDemo-Windows`: the unpacked PyInstaller app folder
 
 If this folder is part of a larger repository, the `.github` directory must live at that repository's root for GitHub Actions to discover it.
+
+## Publish A GitHub Release
+
+Push a version tag that starts with `v`:
+
+```sh
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+The same Windows workflow will build the installer and publish `SimpleGuiDemoSetup.exe` as a release asset on the tag's GitHub Release.
